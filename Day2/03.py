@@ -1,0 +1,5 @@
+a = eval(input("Type Your Value: "))
+print(a)
+b = eval(input("Type a Number to add to list: "))
+a.append(b)
+print(a)
