@@ -130,5 +130,8 @@ Inheritance:- its a phenomena where one class deviate(share) its property to
                     class C(A):
                         statement
                         
+                5.Hybrid inheritance:- Its a inheritance where we have more then one model in a
+                    in a single model that model is known as hybrid model
 
+                    it is more efficent, effective model in inheritance
  """
