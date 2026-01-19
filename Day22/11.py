@@ -8,21 +8,21 @@ class addition:
 
 
 class subtraction:
-    @staticmethod
+    @3
     def sub(a, b):
-        print("sum", a - b)
+        print("sub", a - b)
 
 
 class new(addition, subtraction):
     @staticmethod
     def mul(a, b):
-        print("sum", a * b)
+        print("mul", a * b)
 
 
 class calculator(new):
     @staticmethod
     def div(a, b):
-        print("sum", a / b)
+        print("div", a / b)
 
 
 calculator.add(10, 5)
