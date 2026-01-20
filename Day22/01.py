@@ -134,4 +134,17 @@ Inheritance:- its a phenomena where one class deviate(share) its property to
                     in a single model that model is known as hybrid model
 
                     it is more efficent, effective model in inheritance
+
+
+polymorphism:- It is a phenomena where we have one interface for with multiple implimentation
+                for a perticulaer operation
+
+                in this due to same name the other operation will over write the first operation
+
+                we have three types of polymorphism 
+                1.Method overloading
+                2.Method overriding
+                3.Operatior overloading
+
+                    
  """
