@@ -8,7 +8,6 @@ class addition:
 
 
 class subtraction:
-    @3
     def sub(a, b):
         print("sub", a - b)
 

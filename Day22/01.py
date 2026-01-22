@@ -146,5 +146,17 @@ polymorphism:- It is a phenomena where we have one interface for with multiple i
                 2.Method overriding
                 3.Operatior overloading
 
-                    
+                1.Method overloading:- it is featuer of polymorphism where multiple methods
+                        perform multiple task by staying in the same class with same method
+                        name but different parameters
+
+                2.Method Overriding:- it is a featuer of polymorphism where a subClass provide
+                        its own specification in a single method which is already define on the
+                        parent class using same name, parameters, and return type
+
+                3.Operatior overloading:- it is a varient of polymorphosm where you put operators 
+                        using magic methods because OOPS dont understand operator 
+
+                        eg:- __add__ for addition
+
  """
