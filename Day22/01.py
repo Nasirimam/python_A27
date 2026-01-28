@@ -1,38 +1,38 @@
-class lib:
-    book_dict = {"The Alche": 4, "1984": 3, "The 3 Mistake of my life": 2}
+# class lib:
+#     book_dict = {"The Alche": 4, "1984": 3, "The 3 Mistake of my life": 2}
 
-    def __init__(self, sname, sphoneno, email, sid, sadd, sbook=[]):
-        self.sname = sname
-        self.sphoneno = sphoneno
-        self.email = email
-        self.sid = sid
-        self.sadd = sadd
-        self.sbook = sbook
+#     def __init__(self, sname, sphoneno, email, sid, sadd, sbook=[]):
+#         self.sname = sname
+#         self.sphoneno = sphoneno
+#         self.email = email
+#         self.sid = sid
+#         self.sadd = sadd
+#         self.sbook = sbook
 
-    def dis_obj(self):
-        print(self.sname, self.sphoneno, self.email, self.sid, self.sadd, self.sbook)
+#     def dis_obj(self):
+#         print(self.sname, self.sphoneno, self.email, self.sid, self.sadd, self.sbook)
 
-    def issue_book(self):
-        bn = input("Enter The Book: ")
-        if bn in self.book_dict and self.book_dict_dict[bn] > 0:
-            self.sbook += [bn]
-            self.book_dict[bn] -= 1
-        else:
-            print("NA")
+#     def issue_book(self):
+#         bn = input("Enter The Book: ")
+#         if bn in self.book_dict and self.book_dict_dict[bn] > 0:
+#             self.sbook += [bn]
+#             self.book_dict[bn] -= 1
+#         else:
+#             print("NA")
 
-    def return_book(self):
-        bn = input("Enter The Return Book: ")
-        self.sbook.remove(bn)
-        self.book_dict[bn] += 1
+#     def return_book(self):
+#         bn = input("Enter The Return Book: ")
+#         self.sbook.remove(bn)
+#         self.book_dict[bn] += 1
 
 
-nasir = lib("nasir", 9237432434, "imamnasir73@gmail.com", 11, "sec-62")
-print(lib.book_dict)
-nasir.dis_obj()
-nasir.issue_book()
-nasir.dis_obj()
-print(lib.book_dict)
-nasir.return_book()
+# nasir = lib("nasir", 9237432434, "imamnasir73@gmail.com", 11, "sec-62")
+# print(lib.book_dict)
+# nasir.dis_obj()
+# nasir.issue_book()
+# nasir.dis_obj()
+# print(lib.book_dict)
+# nasir.return_book()
 
 """
 in python we work on real time senarious using OOPS or in the presence of
@@ -52,28 +52,28 @@ class and object but OOPS follow some fundamentls
                     1.Public
                     2.Protector
                     3.Private
-                
+
                 Public:- There are the Access Specifier Which are use in common
                         programing where anybody can access inside the class,
                         outside the class
-                
-                Protector:- Its a Access specifier where you give security to 
+
+                Protector:- Its a Access specifier where you give security to
                         variable and method in the form of semi-security using
-                        single underscore(_) 
-                
-                Private:- Its a most efficient Access specifier where you give 
+                        single underscore(_)
+
+                Private:- Its a most efficient Access specifier where you give
                         complete secuity to class and objects for complete security
                         we user double underscore (__)eg - ATM Pins, Passwords
                         syntex -- class - c_name._c_name__attribute
                                  obj - ob_name._cname__attribute
                                  method - ob_name._cname__m_name()
-                
-                Modify:- 
 
-Inheritance:- its a phenomena where one class deviate(share) its property to 
+                Modify:-
+
+Inheritance:- its a phenomena where one class deviate(share) its property to
                 another class, the class which deviate its property is known as
                 parent class the class which accurie is known as child class
-                
+
                 C1 - Parent Class / Super Class
                 C2 - Child / dirived / sub
 
@@ -91,14 +91,14 @@ Inheritance:- its a phenomena where one class deviate(share) its property to
                     class B(A):
                         statement
 
-                        
-            Constructor chaining:- it is a phenomena where we debiate(share) the 
+
+            Constructor chaining:- it is a phenomena where we debiate(share) the
                 constructor of parent class inside the child class using super() method
 
                 2.Multi Level inheritance:- #in this inheritance parent deviate (share)
                     its propertiy to child class in multiple phases
 
-                    #its a downword directional model where lower class or last class carry the 
+                    #its a downword directional model where lower class or last class carry the
                     properties of all the above class
                     class A:
                         statement
@@ -129,7 +129,7 @@ Inheritance:- its a phenomena where one class deviate(share) its property to
                         statement
                     class C(A):
                         statement
-                        
+
                 5.Hybrid inheritance:- Its a inheritance where we have more then one model in a
                     in a single model that model is known as hybrid model
 
@@ -141,7 +141,7 @@ polymorphism:- It is a phenomena where we have one interface for with multiple i
 
                 in this due to same name the other operation will over write the first operation
 
-                we have three types of polymorphism 
+                we have three types of polymorphism
                 1.Method overloading
                 2.Method overriding
                 3.Operatior overloading
@@ -154,9 +154,31 @@ polymorphism:- It is a phenomena where we have one interface for with multiple i
                         its own specification in a single method which is already define on the
                         parent class using same name, parameters, and return type
 
-                3.Operatior overloading:- it is a varient of polymorphosm where you put operators 
-                        using magic methods because OOPS dont understand operator 
+                3.Operatior overloading:- it is a varient of polymorphosm where you put operators
+                        using magic methods because OOPS dont understand operator
 
                         eg:- __add__ for addition
 
- """
+Abstraction:- it is a phenomena of OOPS where we hide the implimentation and show the
+               functionality of the operation
+
+               we have three types of abstraction:
+                    1.Abstract Class
+                    2.Abstract Method
+                    3.Concreate Class
+
+            1.Abstract Class:- A Class which contain atleast 1 abstractmethod that class is known
+                    as Abstract Class
+
+            2.Abstract Method:-There are the method which are genreated in the presence of a
+                    decorator @abstractmethod
+
+                    To call a abstractmethod we have to use abc package
+
+                    syntex:- from abc import ABC,abstractmethod
+                             @abstractmethod
+                             def f_name(arg):
+                                pass
+
+            3.Concreate Class:- it is a class whare it should't contian any abstractmethod
+"""
